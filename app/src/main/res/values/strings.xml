@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MovieDB Caparros</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hint">Titre, acteur, mot clé</string>
+</resources>
