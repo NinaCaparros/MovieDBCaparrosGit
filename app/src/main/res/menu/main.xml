@@ -13,4 +13,22 @@
         android:orderInCategory="101"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/grid"
+        android:orderInCategory="105"
+        android:title="Vue grille"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/list"
+        android:orderInCategory="103"
+        android:title="Vue liste"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/vue_description"
+        android:orderInCategory="104"
+        android:title="Vue poster"
+        app:showAsAction="never"/>
 </menu>

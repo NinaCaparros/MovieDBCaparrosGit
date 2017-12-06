@@ -6,4 +6,10 @@
 
     <string name="action_settings">Settings</string>
     <string name="hint">Titre, acteur, mot clé</string>
+    <string name="language">Langue</string>
+    <string name="quality_poster">Qualité poster</string>
+    <string name="small">Petit</string>
+    <string name="medium">Moyen</string>
+    <string name="big">Grand</string>
+    <string name="about">A propos</string>
 </resources>

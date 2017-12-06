@@ -16,10 +16,15 @@ public class MovieViewHolder extends RecyclerView.ViewHolder{
     TextView tv_description;
     ImageView iv_poster;
 
-    public MovieViewHolder(View itemViewUser){
+    public MovieViewHolder(View itemViewUser, boolean all){
         super(itemViewUser);
-        tv_title=(TextView)itemView.findViewById(R.id.tv_title);
-        tv_description=(TextView)itemView.findViewById(R.id.tv_description);
+        if(all)
+        {
+            tv_title=(TextView)itemView.findViewById(R.id.tv_title);
+
+            tv_description=(TextView)itemView.findViewById(R.id.tv_description);
+
+        }
         iv_poster=(ImageView)itemView.findViewById(R.id.imageView);
     }
 

@@ -25,16 +25,18 @@
                 android:name="android.app.default_searchable"
                 android:value="com.example.caparros.moviedbcaparros.services.SearchableActivity" />
         </activity>
-        <activity android:name=".services.MovieActivity"></activity>
-        <activity android:name="com.example.caparros.moviedbcaparros.services.SearchableActivity"
-            android:parentActivityName=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="android.app.searchable"
-                android:resource="@xml/searchable"/>
+        <activity
+            android:name=".SingleMovieActivity"
+            android:label="Détails"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name=".SingleTvshowActivity"
+            android:label="Détails"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".SettingsActivity"
+            android:label="Settings"></activity>
     </application>
 
 </manifest>

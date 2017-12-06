@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieDB Caparros</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hint">Title, actor, keyword</string>
+    <string name="language">Language</string>
+    <string name="quality_poster">Poster quality</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="big">Big</string>
+    <string name="about">About</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.caparros.moviedbcaparros.SettingsActivity"
+    tools:showIn="@layout/app_bar_settings">
+    <TextView
+        android:id="@+id/TVLangue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/RGLangue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/TVLangue">
+
+        <RadioButton
+            android:id="@+id/RBFr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="francais"
+            android:text="Français"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/RBEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="anglais"
+            android:text="Anglais"
+            android:textSize="15dp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TVImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quality_poster"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/RGLangue"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/RGQImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/TVImage">
+
+        <RadioButton
+            android:id="@+id/RbMAx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="max"
+            android:text="@string/big"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/RbMoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moyen"
+            android:text="@string/medium"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/RbMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="min"
+            android:text="@string/small"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/vPropos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/RGQImage"
+            android:layout_marginTop="50dp"
+            android:textSize="25dp" />
+
+
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>
